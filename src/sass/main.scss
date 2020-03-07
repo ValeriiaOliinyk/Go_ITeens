@@ -1,6 +1,10 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-
+//Fonts & Colors
+@import './vars.scss';
+//Base
 @import 'normalize.scss';
 @import 'base.scss';
+
+//Components
