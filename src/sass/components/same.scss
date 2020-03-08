@@ -1,0 +1,44 @@
+.title {
+  font-size: 20px;
+  font-family: $main-font;
+  line-height: 2.3;
+  color: $title-color;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: $gold-color;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.section {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 33px;
+  }
+
+  .section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .container {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
