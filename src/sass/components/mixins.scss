@@ -1,0 +1,9 @@
+@mixin mobile__text--mix($color) {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: $color;
+  font-family: $second-font;
+  font-weight: 400;
+  margin: 0;
+}

@@ -1,0 +1,52 @@
+.section1 {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.apostrophe__logo {
+  position: absolute;
+  display: flex;
+  top: 32px;
+  left: 0;
+  transform: translateY(10%);
+  width: 17px;
+  height: 13px;
+}
+.section1__text {
+  @include mobile__text--mix($section1-text);
+  padding-bottom: 30px;
+}
+.overlay {
+  width: 280px;
+}
+.section1__block {
+  position: relative;
+  width: 280px;
+  height: 230px;
+  border-radius: 9px;
+  background-color: $section1-description;
+  margin-top: 40px;
+  &:before {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    top: 24px;
+    left: 108px;
+    background-color: #e9ac38;
+    content: '';
+    transform: translateY(100%);
+  }
+}
+.section1__block--text {
+  width: 285px;
+  height: 168px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: $white-color;
+  font-family: $second-font;
+  font-weight: 400;
+  text-align: center;
+  padding: 40px 27px 0 27px;
+}
