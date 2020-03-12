@@ -77,12 +77,11 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  padding-top: 40px;
 }
-.directions_item {
+.directions__item {
   display: block;
-  width: 280px;
-  height: 225px;
-  @include reset-space;
+  position: relative;
 }
 .directions__link {
   text-decoration: none;
@@ -98,6 +97,28 @@
   &:focus {
     background-color: $hover-color;
   }
+  &:hover .directions-description,
+  &:hover .directions--age,
+  &:hover .directions--years {
+    color: $white-color;
+  }
+  &:hover .directions--icon {
+    fill: $white-color;
+  }
+  &:focus .directions-description,
+  &:focus .directions--age,
+  &:focus .directions--years {
+    color: $white-color;
+  }
+  &:focus .directions--icon {
+    fill: $white-color;
+  }
+  &:hover .directions--icon {
+    transform: translate(0);
+  }
+  &:focus .directions--icon {
+    transform: translate(0);
+  }
 }
 .directions__panel {
   display: block;
@@ -111,6 +132,13 @@
 }
 .directions__title {
   @include reset-space;
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: $title-color;
+  font-family: $second-font;
+  font-weight: 700;
+  padding-bottom: 20px;
 }
 .directions-description {
   @include reset-space;
@@ -120,18 +148,22 @@
   color: $main-text;
   font-family: $second-font;
   font-weight: 400;
-  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .directions--age {
+  position: relative;
   font-size: 30px;
   letter-spacing: 0px;
   line-height: 22px;
   color: $hover-color;
   font-family: $main-font;
   font-weight: 700;
-  padding-top: 40px;
+  padding-bottom: 15px;
 }
 .directions--years {
+  position: absolute;
+  top: -20px;
+  right: 60px;
   font-size: 13px;
   letter-spacing: 0px;
   line-height: 22px;
@@ -139,6 +171,29 @@
   font-family: $second-font;
   font-weight: 400;
   text-decoration-line: underline;
+}
+.directions--overlay {
+  position: relative;
+  overflow: hidden;
+  height: 13px;
+  width: 39px;
+}
+.directions--icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  fill: $hover-color;
+  transform: translate(-25px);
+  transition: $anim-time linear;
+}
+@media screen and (max-width: 767px) {
+  .directions__item {
+    margin-bottom: 10px;
+  }
+  .directions__item:nth-child(4n) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .section1 {
@@ -173,6 +228,34 @@
   .section1__text {
     font-size: 18px;
     line-height: 25px;
+  }
+}
+.directions__link {
+  width: 310px;
+  height: 290px;
+}
+.directions__item:nth-child(odd) {
+  &::before {
+    z-index: 2;
+    width: 300px;
+    height: 1px;
+    background-color: $section-background;
+    border: 1px dashed $grey-lines;
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 5px;
+  }
+  &:after {
+    z-index: 2;
+    width: 1px;
+    height: 280px;
+    background-color: $section-background;
+    border: 1px dashed $grey-lines;
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    right: 0;
   }
 }
 @media screen and (min-width: 1300px) {
