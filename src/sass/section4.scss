@@ -1,22 +1,12 @@
 .about {
   margin: auto;
 }
-.about__heading {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 50px;
-  width: 280px;
-  font-size: 20px;
-  font-family: $main-font;
-  color: $title-color;
-  text-transform: uppercase;
+.title__about {
   &::before {
     display: inline-block;
     content: '';
     background-image: url(../images/elips.svg);
     background-repeat: no-repeat;
-    background-color: $gold-color;
     background-position: center;
     width: 30px;
     height: 30px;
@@ -157,7 +147,7 @@
   .about {
     display: inline;
   }
-  .title {
+  .title__about {
     &::before {
       background-image: url(../images/cubes.svg);
     }
