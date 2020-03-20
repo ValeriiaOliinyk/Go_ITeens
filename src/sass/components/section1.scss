@@ -1,8 +1,10 @@
 .section1 {
   padding-top: 60px;
 }
+
 .section1__item {
   position: relative;
+
   &:before {
     position: absolute;
     background-image: url(../images/apostrophe.svg);
@@ -25,9 +27,11 @@
   margin: 0;
   padding-bottom: 30px;
 }
+
 .overlay {
   width: 280px;
 }
+
 .section1__block {
   position: relative;
   width: inherit;
@@ -37,6 +41,7 @@
   border-radius: 9px;
   background-color: $section1-color;
   margin-top: 40px;
+
   &:before {
     display: block;
     position: absolute;
@@ -48,6 +53,7 @@
     content: '';
   }
 }
+
 .section1__block--text {
   width: 230px;
   font-size: 18px;
@@ -60,9 +66,11 @@
   padding-top: 40px;
   margin: 0;
 }
+
 .directions {
   padding-top: 60px;
 }
+
 .directions__title {
   @include reset-space;
   font-size: 25px;
@@ -72,6 +80,7 @@
   font-family: $second-font;
   font-weight: 700;
 }
+
 .directions__list {
   @include reset-space;
   display: flex;
@@ -79,10 +88,12 @@
   list-style: none;
   padding-top: 40px;
 }
+
 .directions__item {
   display: block;
   position: relative;
 }
+
 .directions__link {
   text-decoration: none;
   display: flex;
@@ -96,33 +107,41 @@
     z-index: 3;
     background-color: $hover-color;
   }
+
   &:focus {
     z-index: 3;
     background-color: $hover-color;
   }
+
   &:hover .directions-description,
   &:hover .directions--age,
   &:hover .directions--years {
     color: $white-color;
   }
+
   &:hover .directions--icon {
     fill: $white-color;
   }
+
   &:focus .directions-description,
   &:focus .directions--age,
   &:focus .directions--years {
     color: $white-color;
   }
+
   &:focus .directions--icon {
     fill: $white-color;
   }
+
   &:hover .directions--icon {
     transform: translate(0);
   }
+
   &:focus .directions--icon {
     transform: translate(0);
   }
 }
+
 .directions__panel {
   display: block;
   position: absolute;
@@ -133,6 +152,7 @@
   width: 175px;
   height: 180px;
 }
+
 .directions__title {
   @include reset-space;
   font-size: 25px;
@@ -143,6 +163,7 @@
   font-weight: 700;
   padding-bottom: 20px;
 }
+
 .directions-description {
   @include reset-space;
   font-size: 16px;
@@ -153,6 +174,7 @@
   font-weight: 400;
   padding-bottom: 30px;
 }
+
 .directions--age {
   position: relative;
   font-size: 30px;
@@ -163,6 +185,7 @@
   font-weight: 700;
   padding-bottom: 15px;
 }
+
 .directions--years {
   position: absolute;
   top: -20px;
@@ -175,12 +198,14 @@
   font-weight: 400;
   text-decoration-line: underline;
 }
+
 .directions--overlay {
   position: relative;
   overflow: hidden;
   height: 13px;
   width: 39px;
 }
+
 .directions--icon {
   position: absolute;
   top: 0;
@@ -190,10 +215,12 @@
   transform: translate(-25px);
   transition: $anim-time linear;
 }
+
 @media screen and (max-width: 767px) {
   .directions__item {
     margin-bottom: 10px;
   }
+
   .directions__item:nth-child(4n) {
     margin-bottom: 0;
   }
