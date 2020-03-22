@@ -198,7 +198,9 @@
   .about {
     padding-top: 110px;
     padding-bottom: 110px;
-    background-color: $section-background;
+    background-image: url(/src/images/BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .about__list {
