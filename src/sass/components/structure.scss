@@ -1,6 +1,5 @@
 .structure__list {
   list-style-type: none;
-  @include reset-space();
 }
 
 .structure__text {
@@ -151,6 +150,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1299px) {
   .structure {
+    padding-top: 60px;
     padding-bottom: 75px;
   }
 
@@ -176,6 +176,7 @@
 
 @media screen and (min-width: 1300px) {
   .structure {
+    padding-top: 90px;
     padding-bottom: 115px;
   }
 

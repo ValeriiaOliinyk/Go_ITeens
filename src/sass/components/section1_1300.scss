@@ -1,4 +1,13 @@
 @media screen and (min-width: 1300px) {
+  .section1 {
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
+
+  .directions {
+    padding-bottom: 110px;
+  }
+
   .section1__box {
     display: flex;
     flex-direction: row-reverse;
@@ -21,6 +30,7 @@
   }
 
   .section1__block {
+    margin-top: 110px;
     height: 225px;
 
     &:before {

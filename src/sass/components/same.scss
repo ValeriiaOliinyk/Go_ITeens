@@ -6,6 +6,15 @@ img {
   background-repeat: no-repeat;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin reset-space {
   margin: 0;
   padding: 0;
@@ -54,51 +63,7 @@ img {
     margin: 0;
   }
 }
-img {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@mixin reset-space {
-  margin: 0;
-  padding: 0;
-}
-.container {
-  width: 280px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.title {
-  font-size: 20px;
-  font-family: $main-font;
-  line-height: 2.3;
-  color: $title-color;
-  font-weight: 700;
-  text-transform: uppercase;
-  @include reset-space();
-}
-.title-box {
-  display: flex;
-  align-items: center;
-}
-@mixin circles($background-color, $width, $height) {
-  width: $width;
-  height: $height;
-  background-color: $background-color;
-  border-radius: 50%;
-}
-.circle {
-  margin-right: 15px;
-  @include circles($gold-color, 30px, 30px);
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 620px;
-  }
-  .title {
-    font-size: 33px;
-  }
-}
+
 @media screen and (min-width: 1300px) {
   .container {
     width: 1300px;

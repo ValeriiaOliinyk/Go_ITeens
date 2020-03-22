@@ -17,6 +17,12 @@
   }
 }
 
+.title-icons {
+  background-image: url(../../images/elips.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .section1__text {
   font-size: 14px;
   letter-spacing: 1px;
@@ -68,7 +74,7 @@
 }
 
 .directions {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .directions__title {
@@ -82,7 +88,6 @@
 }
 
 .directions__list {
-  @include reset-space;
   display: flex;
   flex-wrap: wrap;
   list-style: none;

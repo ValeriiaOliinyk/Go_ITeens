@@ -16,10 +16,6 @@
   display: none;
 }
 
-.header__list {
-  @include reset-space();
-}
-
 .header__link {
   text-decoration: none;
   color: $white-color;
