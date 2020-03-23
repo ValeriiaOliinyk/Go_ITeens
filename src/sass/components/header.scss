@@ -102,60 +102,41 @@
   margin-left: auto;
 }
 
-@media screen and (max-width: 767px) {
-  .main {
-    padding-bottom: 50px;
-  }
+.main {
+  padding-bottom: 50px;
+}
 
-  .banner {
-    padding-top: 275px;
-  }
+.banner {
+  padding-top: 275px;
+}
 
-  .banner__title {
-    text-align: center;
-  }
+.banner__title {
+  text-align: center;
+}
 
-  .banner__text {
-    text-align: center;
-  }
+.banner__text {
+  text-align: center;
+}
 
-  .banner__opacity-bacground {
-    margin-top: 20px;
-    height: 55px;
-    padding-top: 10px;
-    margin-bottom: 55px;
-  }
+.banner__opacity-bacground {
+  margin-top: 20px;
+  height: 55px;
+  padding-top: 10px;
+  margin-bottom: 55px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
   .main {
-    background-image: url();
+    background-image: url(../../images/headerdesktop.png);
+    padding-bottom: 120px;
   }
 
-  .navigation {
-    display: block;
-  }
-
-  .header__items {
-    display: flex;
-    justify-content: center;
-  }
-
-  .header__link {
-    display: block;
-    font-weight: 700;
-
-    &:hover {
-      border-bottom: 2px solid $gold-color;
+  @media screen and (min-resolution: 3dppx) {
+    .main {
+      background-image: url(../../images/headerdesktop@2x.png);
     }
-  }
-
-  .header__list {
-    display: flex;
-  }
-
-  .banner {
-    display: none;
   }
 }
 
@@ -174,7 +155,6 @@
   }
 
   .header__list {
-    padding-bottom: 45px;
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -190,15 +170,26 @@
 }
 
 @media screen and (min-width: 1300px) {
-  .main {
-    background-image: url(../../images/headerdesktop.png);
-    padding-bottom: 120px;
+  .header__list {
+    display: flex;
+    list-style-type: none;
+    margin-right: 50px;
   }
 
-  @media screen and (min-resolution: 3dppx) {
-    .main {
-      background-image: url(../../images/headerdesktop@2x.png);
-    }
+  .header__items {
+    font-weight: 700;
+  }
+
+  .header__link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 20px;
+    border-bottom: 3px solid transparent;
+  }
+
+  .header__link:hover {
+    border-bottom: 2px solid $gold-colo;
   }
 
   .banner__icon {
@@ -212,10 +203,6 @@
   .navigation {
     display: flex;
     align-items: center;
-  }
-
-  .header__list {
-    margin-right: 50px;
   }
 
   .header__items + .header__items {
