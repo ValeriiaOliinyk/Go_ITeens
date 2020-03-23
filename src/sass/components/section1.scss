@@ -1,5 +1,6 @@
 .section1 {
   padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .section1__item {
@@ -139,11 +140,11 @@
   }
 
   &:hover .directions--icon {
-    transform: translate(0);
+    transform: translate(-5px);
   }
 
   &:focus .directions--icon {
-    transform: translate(0);
+    transform: translate(-5px);
   }
 }
 
@@ -213,9 +214,12 @@
 
 .directions--icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 39px;
+  height: 13px;
+  top: 0px;
+  left: 0px;
   display: block;
+  justify-content: center;
   fill: $hover-color;
   transform: translate(-25px);
   transition: $anim-time linear;
