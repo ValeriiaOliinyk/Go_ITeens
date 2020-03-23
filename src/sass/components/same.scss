@@ -41,6 +41,21 @@ ul {
   align-items: center;
 }
 
+.button {
+  all: unset;
+  color: $white-color;
+  font-family: $main-font;
+  background-color: $gold-color;
+  font-size: 16px;
+  width: 190px;
+  height: 40px;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 @mixin circles($background-color, $width, $height) {
   width: $width;
   height: $height;
@@ -61,12 +76,6 @@ ul {
   .title {
     font-size: 33px;
     margin: 0;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .container {
-    width: 1300px;
   }
 }
 
