@@ -143,6 +143,7 @@
 @media screen and (max-width: 767px) {
   .about {
     padding-bottom: 50px;
+    display: block;
   }
 }
 
@@ -154,10 +155,6 @@
     width: 620px;
     margin-left: 0;
     margin: auto;
-  }
-
-  .about {
-    display: block;
   }
 
   .title__about {
@@ -197,11 +194,12 @@
   .about {
     padding-bottom: 110px;
     background-color: $section-background;
+    background-image: url(../../images/background.png);
+    background-position: center;
   }
 
   .about__list {
-    width: 1235px;
-    margin: auto;
+    width: 1300px;
   }
 
   .about__text {
@@ -213,7 +211,14 @@
     width: 240px;
     height: 200px;
     margin-left: 0;
-    margin-right: 60px;
-    justify-content: space-between;
+    margin-right: 84px;
+  }
+
+  .about__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .about__item:last-child {
+    margin-right: 0;
   }
 }
