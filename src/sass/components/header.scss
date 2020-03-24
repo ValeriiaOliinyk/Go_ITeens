@@ -10,6 +10,17 @@
   .main {
     background-image: url(../../images/mobileheader@2x.png);
   }
+
+  .header__logo {
+    background-image: url(../../images/logomobile@2x.png);
+  }
+}
+
+.header__logo {
+  width: 100px;
+  height: 26px;
+  background-image: url(../../images/logomobile.png);
+  background-size: contain;
 }
 
 .navigation {
@@ -137,6 +148,18 @@
     .main {
       background-image: url(../../images/headerdesktop@2x.png);
     }
+
+    .header__logo {
+      background-image: url(../../images/Logo@2x.png);
+    }
+  }
+
+  .header__logo {
+    background-image: url(../../images/Logo.png);
+    width: 140px;
+    height: 36px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -189,7 +212,7 @@
   }
 
   .header__link:hover {
-    border-bottom: 2px solid $gold-colo;
+    border-bottom: 2px solid $gold-color;
   }
 
   .banner__icon {
