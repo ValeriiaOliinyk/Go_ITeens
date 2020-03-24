@@ -268,11 +268,14 @@
   }
 
   .banner__title {
+    text-align: left;
     font-size: 65px;
     margin-bottom: 50px;
   }
 
   .banner__opacity-bacground {
+    margin: 0;
+    padding: 0;
     width: 490px;
     height: 100px;
     display: flex;
