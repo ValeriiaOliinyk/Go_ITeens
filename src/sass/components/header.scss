@@ -17,6 +17,7 @@
 }
 
 .header__logo {
+  display: block;
   width: 100px;
   height: 26px;
   background-image: url(../../images/logomobile.png);
@@ -31,9 +32,34 @@
   text-decoration: none;
   color: $white-color;
   font-family: $second-font;
+  border-bottom: 3px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid $gold-color;
+  }
 }
 
 /*-------------------------------------------------------Burger---------------------------------------------------*/
+@media screen and (max-width: 1299px) {
+  .navigation {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $purple-color;
+  }
+
+  .header__list {
+    padding-bottom: 45px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .header__items + .header__items {
+    margin-top: 10px;
+  }
+}
+
+/*-------------------------------------------------------Кнопка---------------------------------------------------*/
 .burger {
   width: 29px;
   height: 24px;
@@ -208,11 +234,6 @@
     flex-wrap: wrap;
     justify-content: center;
     height: 20px;
-    border-bottom: 3px solid transparent;
-  }
-
-  .header__link:hover {
-    border-bottom: 2px solid $gold-color;
   }
 
   .banner__icon {
