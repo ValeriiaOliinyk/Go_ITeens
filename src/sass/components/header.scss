@@ -10,6 +10,19 @@
   .main {
     background-image: url(../../images/mobileheader@2x.png);
   }
+
+  .header__logo {
+    background-image: url(../../images/logomobile@2x.png);
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 100px;
+  height: 26px;
+  background-image: url(../../images/logomobile.png);
+  background-size: contain;
+  z-index: 10;
 }
 
 .navigation {
@@ -20,55 +33,11 @@
   text-decoration: none;
   color: $white-color;
   font-family: $second-font;
-}
+  border-bottom: 3px solid transparent;
 
-/*-------------------------------------------------------Burger---------------------------------------------------*/
-.burger {
-  width: 29px;
-  height: 24px;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.burger .burger__item,
-.burger .burger__item::before,
-.burger .burger__item::after {
-  position: absolute;
-  top: 50%;
-  width: 29px;
-  height: 3px;
-  margin-top: -1.5px;
-  background-color: $white-color;
-}
-
-.burger .burger__item::before,
-.burger .burger__item::after {
-  content: '';
-  transition: 0.5s;
-}
-
-.burger .burger__item::before {
-  transform: translateY(-8px);
-}
-
-.burger .burger__item::after {
-  transform: translateY(8px);
-}
-
-/*При клике*/
-
-.burger--active .burger__item {
-  height: 0;
-}
-
-.burger--active .burger__item::before {
-  transform: rotate(45deg);
-}
-
-.burger--active .burger__item::after {
-  transform: rotate(-45deg);
+  &:hover {
+    border-bottom: 2px solid $gold-color;
+  }
 }
 
 /*Banner*/
@@ -102,61 +71,53 @@
   margin-left: auto;
 }
 
-@media screen and (max-width: 767px) {
-  .main {
-    padding-bottom: 50px;
-  }
+.main {
+  padding-bottom: 50px;
+}
 
-  .banner {
-    padding-top: 275px;
-  }
+.banner {
+  padding-top: 275px;
+}
 
-  .banner__title {
-    text-align: center;
-  }
+.banner__title {
+  text-align: center;
+}
 
-  .banner__text {
-    text-align: center;
-  }
+.banner__text {
+  text-align: center;
+}
 
-  .banner__opacity-bacground {
-    margin-top: 20px;
-    height: 55px;
-    padding-top: 10px;
-    margin-bottom: 55px;
-  }
+.banner__opacity-bacground {
+  margin-top: 20px;
+  height: 55px;
+  padding-top: 10px;
+  margin-bottom: 55px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
   .main {
-    background-image: url();
+    background-image: url(../../images/headerdesktop.png);
+    padding-bottom: 120px;
   }
 
-  .navigation {
-    display: block;
-  }
+  @media screen and (min-resolution: 3dppx) {
+    .main {
+      background-image: url(../../images/headerdesktop@2x.png);
+    }
 
-  .header__items {
-    display: flex;
-    justify-content: center;
-  }
-
-  .header__link {
-    display: block;
-
-    font-weight: 700;
-
-    &:hover {
-      border-bottom: 2px solid $gold-color;
+    .header__logo {
+      background-image: url(../../images/Logo@2x.png);
     }
   }
 
-  .header__list {
-    display: flex;
-  }
-
-  .banner {
-    display: none;
+  .header__logo {
+    background-image: url(../../images/Logo.png);
+    width: 140px;
+    height: 36px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -170,12 +131,11 @@
     margin-right: auto;
     margin-left: auto;
     width: 236px;
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 100px;
   }
 
   .header__list {
-    padding-bottom: 45px;
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -190,16 +150,108 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+/*-------------------------------------------------------Burger---------------------------------------------------*/
+@media screen and (max-width: 1299px) {
   .main {
-    background-image: url(../../images/headerdesktop.png);
-    padding-bottom: 120px;
+    position: relative;
   }
 
-  @media screen and (min-resolution: 3dppx) {
-    .main {
-      background-image: url(../../images/headerdesktop@2x.png);
-    }
+  .navigation {
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $purple-color;
+    transition: all 0.3s ease 0s;
+  }
+
+  .navigation.active {
+    top: 0;
+  }
+
+  .header__list {
+    padding-bottom: 45px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .header__items + .header__items {
+    margin-top: 10px;
+  }
+}
+
+/*-------------------------------------------------------Кнопка---------------------------------------------------*/
+.burger {
+  width: 29px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+}
+
+.burger .burger__item,
+.burger .burger__item::before,
+.burger .burger__item::after {
+  position: absolute;
+  top: 50%;
+  width: 29px;
+  height: 3px;
+  margin-top: -1.5px;
+  background-color: $white-color;
+}
+
+.burger .burger__item::before,
+.burger .burger__item::after {
+  content: '';
+  transition: 0.5s;
+}
+
+.burger .burger__item::before {
+  transform: translateY(-8px);
+  transition: all 0.3s ease 0s;
+}
+
+.burger .burger__item::after {
+  transform: translateY(8px);
+  transition: all 0.3s ease 0s;
+}
+
+/*При клике*/
+
+.burger.active .burger__item {
+  height: 0;
+}
+
+.burger.active .burger__item::before {
+  transform: rotate(45deg);
+}
+
+.burger.active .burger__item::after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 1300px) {
+  .header__list {
+    display: flex;
+    list-style-type: none;
+    margin-right: 50px;
+  }
+
+  .header__items {
+    font-weight: 700;
+  }
+
+  .header__link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 20px;
   }
 
   .banner__icon {
@@ -213,10 +265,6 @@
   .navigation {
     display: flex;
     align-items: center;
-  }
-
-  .header__list {
-    margin-right: 50px;
   }
 
   .header__items + .header__items {
@@ -238,11 +286,14 @@
   }
 
   .banner__title {
+    text-align: left;
     font-size: 65px;
     margin-bottom: 50px;
   }
 
   .banner__opacity-bacground {
+    margin: 0;
+    padding: 0;
     width: 490px;
     height: 100px;
     display: flex;

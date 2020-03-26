@@ -56,6 +56,7 @@ ul {
   cursor: pointer;
 }
 
+/*Для circle*/
 @mixin circles($background-color, $width, $height) {
   width: $width;
   height: $height;
