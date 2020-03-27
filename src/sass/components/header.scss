@@ -1,18 +1,18 @@
 .main {
   padding-top: 18px;
   background-color: $purple-color;
-  background-image: url(../../images/mobileheader.png);
+  background-image: url(../images/mobileheader.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media screen and (min-resolution: 3dppx) {
   .main {
-    background-image: url(../../images/mobileheader@2x.png);
+    background-image: url(../images/mobileheader@2x.png);
   }
 
   .header__logo {
-    background-image: url(../../images/logomobile@2x.png);
+    background-image: url(../images/logomobile@2x.png);
   }
 }
 
@@ -20,7 +20,7 @@
   display: block;
   width: 100px;
   height: 26px;
-  background-image: url(../../images/logomobile.png);
+  background-image: url(../images/logomobile.png);
   background-size: contain;
   z-index: 10;
 }
@@ -98,22 +98,22 @@
 
 @media screen and (min-width: 768px) {
   .main {
-    background-image: url(../../images/headerdesktop.png);
+    background-image: url(../images/headerdesktop.png);
     padding-bottom: 120px;
   }
 
   @media screen and (min-resolution: 3dppx) {
     .main {
-      background-image: url(../../images/headerdesktop@2x.png);
+      background-image: url(../images/headerdesktop@2x.png);
     }
 
     .header__logo {
-      background-image: url(../../images/Logo@2x.png);
+      background-image: url(../images/Logo@2x.png);
     }
   }
 
   .header__logo {
-    background-image: url(../../images/Logo.png);
+    background-image: url(../images/Logo.png);
     width: 140px;
     height: 36px;
     background-size: cover;
@@ -309,6 +309,6 @@
     margin-right: 20px;
     width: 3px;
     height: 60px;
-    background-image: url(../../images/verticalline.svg);
+    background-image: url(../images/verticalline.svg);
   }
 }
