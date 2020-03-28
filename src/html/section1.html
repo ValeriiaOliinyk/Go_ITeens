@@ -12,20 +12,21 @@
         </p>
       </div>
       <div class="overlay">
-        <img
-          srcset="
-      ../images/kids.png 280w,
-      ../images/kids@2x.png 2x 280w,
-      ../images/kidstablet.png 620w,
-      ../images/kidstablet@2x.png 2x 620w,
-      ../images/kidsdesktop.png 650w,
-      ../images/kidsdesktop.png 2x 1300w"
-          sizes="
-        (max-width: 767px) 280px,
-        (max-width: 1299px) 620px,
-        650px"
-          alt="kids"
-        />
+        <picture>
+          <source
+            srcset="../images/kids.png, ../images/kids@2x.png 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="../images/kidstablet.png, ../images/kidstablet@2x.png 2x"
+            media="(max-width: 1299px)"
+          />
+          <source
+            srcset="../images/kidsdesktop.png, ../images/kidsdesktop@2x.png 2x"
+            media="(min-width: 1300px)"
+          />
+          <img src="../images/kidsdesktop.png" alt="kids" />
+        </picture>
       </div>
     </div>
 
