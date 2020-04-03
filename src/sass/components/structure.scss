@@ -22,6 +22,15 @@
 .structure__item {
   border-radius: 0 10% 0 10%;
   box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+
+  &:hover {
+    background-color: $icon-yellow;
+  }
 }
 
 .structure__item--yellow {
@@ -38,12 +47,10 @@
 
 .structure__item--green {
   background-color: $icon-light-green-back;
-}
 
-.structure__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &:hover {
+    background-color: $icon-yellow;
+  }
 }
 
 .title-structure {

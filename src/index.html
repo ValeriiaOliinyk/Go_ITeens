@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ITeens</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,800|Ubuntu:300,400,500,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gelasio&family=Open+Sans:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/titleicon.png" type="image/png" />
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <!-- endinject -->
@@ -63,9 +68,11 @@
             </p>
           </div>
         </div>
-
+        <a href=""></a>
         <svg class="banner__icon">
-          <use href="./images/scrolldown.svg#scrolldown"></use>
+          <a href="#down">
+            <use href="./images/scrolldown.svg#scrolldown"></use>
+          </a>
         </svg>
       </section>
     </div>
@@ -202,21 +209,21 @@
         </div>
         <ul class="about__list">
           <li class="about__item">
-            <div class="about__overlay--intenet">
+            <div class="about__overlay about__overlay--intenet">
               <p class="about__text">
                 Даємо можливість стати частиною першої підліткової ІТ-спільноти.
               </p>
             </div>
           </li>
           <li class="about__item">
-            <div class="about__overlay--support">
+            <div class="about__overlay about__overlay--support">
               <p class="about__text">
                 Гарантуємо підтримку професійних розробників і викладачів.
               </p>
             </div>
           </li>
           <li class="about__item">
-            <div class="about__overlay--ok">
+            <div class="about__overlay about__overlay--ok">
               <p class="about__text">
                 Прокачуємо технічні навички в програмуванні ігор, веб сайтів і
                 дизайні.
@@ -224,28 +231,28 @@
             </div>
           </li>
           <li class="about__item">
-            <div class="about__overlay--money">
+            <div class="about__overlay about__overlay--money">
               <p class="about__text">
                 Показуємо можливі шляхи монетизації ідей.
               </p>
             </div>
           </li>
           <li class="about__item">
-            <div class="about__overlay--light">
+            <div class="about__overlay about__overlay--light">
               <p class="about__text">
                 Вчимо презентувати себе та свої творчі задуми.
               </p>
             </div>
           </li>
           <li class="about__item">
-            <div class="about__overlay--document">
+            <div class="about__overlay about__overlay--document">
               <p class="about__text">
                 Допомагаємо розробити власне портфоліо.
               </p>
             </div>
           </li>
           <li class="about__item">
-            <div class="about__overlay--target">
+            <div class="about__overlay about__overlay--target">
               <p class="about__text">
                 Надаємо інтерактивний навчальний простір.
               </p>
@@ -254,6 +261,7 @@
         </ul>
       </div>
     </section>
+
     <section class="structure">
       <div class="container">
         <div class="title-box">
@@ -320,42 +328,42 @@
               <a href="email:contact@goiteens.ua" class="footer-top__link">
                 contact@goiteens.ua
               </a>
-              <a href="tel:+38 093 343 21 27" class="footer-top__link">
+              <a href="tel:+380933432127" class="footer-top__link">
                 +38 093 343 21 27
               </a>
-              <a href="tel:+38 067 326 95 92" class="footer-top__link">
+              <a href="tel:+380673269592" class="footer-top__link">
                 +38 067 326 95 92
               </a>
-              <a href="tel:+38 050 366 17 77" class="footer-top__link">
+              <a href="tel:+380503661777" class="footer-top__link">
                 +38 050 366 17 77
               </a>
             </li>
-            <div class="footer__box">
-              <li class="footer-top__item footer-top__item--button">
+            <li class="footer__box">
+              <div class="footer-top__item footer-top__item--button">
                 <button class="button button__footer">Залишити заявку</button>
-              </li>
-              <li class="footer-top__item">
-                <a href="/" class="footer-top__link--network">
-                  <svg class="footer-list__icon">
+              </div>
+              <div class="footer-top__item">
+                <a href="/">
+                  <svg class="footer-list__icon footer-list__icon-telegram">
                     <use href="./images/telegram.svg#telegram"></use>
                   </svg>
                 </a>
-                <a href="/" class="footer-top__link--network">
-                  <svg class="footer-list__icon">
-                    <use href="./images/facebook.svg#Forma_1"></use>
+                <a href="/">
+                  <svg class="footer-list__icon footer-list__icon-blue">
+                    <use href="./images/facebook.svg#facebook"></use>
                   </svg>
                 </a>
-                <a href="/" class="footer-top__link--network">
-                  <svg class="footer-list__icon">
-                    <use href="./images/youtube.svg#Shape_1"></use>
+                <a href="/">
+                  <svg class="footer-list__icon footer-list__icon-red">
+                    <use href="./images/youtube.svg#youtube"></use>
                   </svg>
                 </a>
-              </li>
-            </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom" id="down">
         <div class="container">
           <ul class="footer-bottom__list">
             <li class="footer-bottom__item">

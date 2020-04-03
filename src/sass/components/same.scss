@@ -84,6 +84,7 @@ ul {
   .button {
     margin-right: auto;
     margin-left: auto;
+    transition: background-color 250ms linear;
 
     &:hover,
     &:focus {

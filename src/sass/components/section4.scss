@@ -25,110 +25,80 @@
   height: 125px;
   margin-top: 30px;
   margin-left: 45px;
+  transition: transform 250ms linear;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .about__overlay::before {
+    transform: scale(1.1);
+  }
+
+  &:hover .about__text {
+    color: $footer-black;
+  }
 }
 
-.about__overlay--intenet {
+.about__overlay {
   &::before {
     display: inline-block;
     content: '';
-    background-image: url(../images/internet.svg);
     background-repeat: no-repeat;
-    background-color: $icon-yellow-back;
     background-position: center;
     width: 55px;
     height: 55px;
     border-radius: 30px;
     margin-bottom: 10px;
+  }
+}
+
+.about__overlay--intenet {
+  &::before {
+    background-image: url(../images/internet.svg);
+    background-color: $icon-yellow-back;
   }
 }
 
 .about__overlay--support {
   &::before {
-    display: inline-block;
-    content: '';
     background-image: url(../images/support.svg);
-    background-repeat: no-repeat;
     background-color: $icon-coral-back;
-    background-position: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 30px;
-    margin-bottom: 10px;
   }
 }
 
 .about__overlay--ok {
   &::before {
-    display: inline-block;
-    content: '';
     background-image: url(../images/ok.svg);
-    background-repeat: no-repeat;
     background-color: $icon-purple-back;
-    background-position: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 30px;
-    margin-bottom: 10px;
   }
 }
 
 .about__overlay--money {
   &::before {
-    display: inline-block;
-    content: '';
     background-image: url(../images/money.svg);
-    background-repeat: no-repeat;
     background-color: $icon-light-green-back;
-    background-position: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 30px;
-    margin-bottom: 10px;
   }
 }
 
 .about__overlay--light {
   &::before {
-    display: inline-block;
-    content: '';
     background-image: url(../images/light.svg);
-    background-repeat: no-repeat;
     background-color: $icon-purple-back;
-    background-position: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 30px;
-    margin-bottom: 10px;
   }
 }
 
 .about__overlay--document {
   &::before {
-    display: inline-block;
-    content: '';
     background-image: url(../images/document.svg);
-    background-repeat: no-repeat;
     background-color: $icon-coral-back;
-    background-position: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 30px;
-    margin-bottom: 10px;
   }
 }
 
 .about__overlay--target {
   &::before {
-    display: inline-block;
-    content: '';
     background-image: url(../images/target.svg);
-    background-repeat: no-repeat;
     background-color: $icon-yellow-back;
-    background-position: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 30px;
-    margin-bottom: 10px;
   }
 }
 
@@ -136,7 +106,7 @@
   @include reset-space();
   font-size: 14px;
   font-family: $main-font;
-  line-height: 1.429;
+  line-height: 1.4;
   color: $main-text;
 }
 

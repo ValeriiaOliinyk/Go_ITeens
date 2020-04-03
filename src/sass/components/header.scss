@@ -69,6 +69,11 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+  transition: transform 250ms linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .main {
@@ -99,7 +104,7 @@
 @media screen and (min-width: 768px) {
   .main {
     background-image: url(../images/headerdesktop.png);
-    padding-bottom: 120px;
+    padding-bottom: 95px;
   }
 
   @media screen and (min-resolution: 3dppx) {
