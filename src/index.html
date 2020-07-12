@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +24,9 @@
       <header class="header">
         <div class="container container__header">
           <div class="header__box">
-            <a href="/" class="header__logo"></a>
+            <a href="/" class="header__logo">
+              <img src="./images/Logo.png" alt="logos" width="120"
+            /></a>
             <div class="burger">
               <span class="burger__item"></span>
             </div>
@@ -68,7 +70,6 @@
             </p>
           </div>
         </div>
-        <a href=""></a>
         <svg class="banner__icon">
           <a href="#down">
             <use href="./images/scrolldown.svg#scrolldown"></use>
@@ -89,26 +90,21 @@
               прискорюватися незалежно від шкільної освіти
             </p>
           </div>
-          <div class="overlay">
-            <picture>
-              <source
-                srcset="./images/kids.png, ./images/kids@2x.png 2x"
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="./images/kidstablet.png, ./images/kidstablet@2x.png 2x"
-                media="(max-width: 1299px)"
-              />
-              <source
-                srcset="
-                  ./images/kidsdesktop.png,
-                  ./images/kidsdesktop@2x.png 2x
-                "
-                media="(min-width: 1300px)"
-              />
-              <img src="./images/kidsdesktop.png" alt="kids" />
-            </picture>
-          </div>
+          <picture>
+            <source
+              srcset="./images/kids.png, ./images/kids@2x.png 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="./images/kidstablet.png, ./images/kidstablet@2x.png 2x"
+              media="(max-width: 1299px)"
+            />
+            <source
+              srcset="./images/kidsdesktop.png, ./images/kidsdesktop@2x.png 2x"
+              media="(min-width: 1300px)"
+            />
+            <img src="./images/kidsdesktop.png" alt="kids" />
+          </picture>
         </div>
 
         <div class="section1__block">
@@ -306,6 +302,7 @@
         </ul>
       </div>
     </section>
+
     <footer class="footer">
       <div class="footer-top">
         <div class="container container__footer">

@@ -10,17 +10,12 @@
   .main {
     background-image: url(../images/mobileheader@2x.png);
   }
-
-  .header__logo {
-    background-image: url(../images/logomobile@2x.png);
-  }
 }
 
 .header__logo {
   display: block;
   width: 100px;
   height: 26px;
-  background-image: url(../images/logomobile.png);
   background-size: contain;
   z-index: 10;
 }
@@ -64,8 +59,9 @@
 }
 
 .banner__icon {
-  width: 13px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
+  fill: $white-color;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -111,14 +107,9 @@
     .main {
       background-image: url(../images/headerdesktop@2x.png);
     }
-
-    .header__logo {
-      background-image: url(../images/Logo@2x.png);
-    }
   }
 
   .header__logo {
-    background-image: url(../images/Logo.png);
     width: 140px;
     height: 36px;
     background-size: cover;
@@ -243,6 +234,12 @@
 }
 
 @media screen and (min-width: 1300px) {
+  .main {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .header__list {
     display: flex;
     list-style-type: none;
