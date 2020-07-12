@@ -59,13 +59,14 @@
 }
 
 .banner__icon {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   fill: $white-color;
   display: block;
   margin-right: auto;
   margin-left: auto;
   transition: transform 250ms linear;
+  background-image: url(../../images/scrolldown.svg);
 
   &:hover {
     transform: scale(1.1);
